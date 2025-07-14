@@ -3,23 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <title>Welcome to Wrap and Roll</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #f9f9f9;
       text-align: center;
-      padding: 50px;
+      padding: 5vw;
     }
     h1 {
       color: #ff6600;
-      font-size: 26px;
-      margin-bottom: 30px;
+      font-size: 6vw; /* scales with screen size */
+      margin-bottom: 8vw;
     }
     .menu-button {
       background-color: #ff6600;
       color: white;
-      padding: 15px 30px;
-      font-size: 18px;
+      padding: 4vw 8vw;
+      font-size: 4.5vw;
       border: none;
       border-radius: 30px;
       cursor: pointer;
@@ -29,11 +30,25 @@
       background-color: #df6500;
     }
     img {
-      width: 200px; /* Adjust size as needed */
-      max-width: 80%;
+      width: 50vw;
+      max-width: 250px;
       height: auto;
       display: block;
-      margin: 0 auto 15px auto; /* center and add spacing below */
+      margin: 0 auto 6vw auto;
+    }
+
+    /* Optional: improve layout on larger screens */
+    @media (min-width: 768px) {
+      h1 {
+        font-size: 32px;
+      }
+      .menu-button {
+        font-size: 18px;
+        padding: 15px 30px;
+      }
+      img {
+        width: 200px;
+      }
     }
   </style>
 </head>
